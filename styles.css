@@ -1,0 +1,93 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --text: rgb(100, 100, 100);
+    --pale: rgb(255, 242, 229);  
+    --green: rgb(23, 126, 23); 
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--pale);
+}
+
+#header-img {
+    width: 90px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.the-product {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+#email-section {
+    margin-top: 100px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+}
+
+#submit {
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+section ::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "fraunces";
+    margin-bottom: 10px;  
+}
+
+.icon {
+    color: var(--green);
+}
